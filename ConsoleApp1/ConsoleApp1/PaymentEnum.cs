@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public enum PaymentType
+    public enum PaymentEnum
     {
         Cash,
         Credit,

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public enum Category
+    public enum categoryEnum
     {
         Animals,
         Food,
