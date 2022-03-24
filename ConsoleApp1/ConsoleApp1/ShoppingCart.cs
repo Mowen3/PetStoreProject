@@ -8,26 +8,23 @@ namespace ConsoleApp1
 {
     public class ShoppingCart
     {
-        //private List<Product> _productList { get; set; }
-        
-        
-        public List <Product> _productList = new List<Product>();
 
-        
+        private List <Product> _ShoppingCart = new List<Product>();            
+
 
         public void DisplayCart()
         {
-            for (var i = 0; i < _productList.Count(); i++)
+            for (var i = 0; i < _ShoppingCart.Count(); i++)
             {
 
-                Console.WriteLine($"[{i + 1}]" + _productList[i].ToString());
+                Console.WriteLine($"[{i + 1}]" + _ShoppingCart[i].ToString());
             }
         }
 
 
         public void AddToCart(int addThis)
         {
-            //_productList.Add(stockList[addThis]);
+            //_ShoppingCart.Add(stockList[addThis]);
             //Console.WriteLine("How many would you like to buy?");
             //int quantity = int.Parse(Console.ReadLine());
             //Console.WriteLine($"You have added {quantity} of {stockList[addThis]}");
@@ -36,7 +33,7 @@ namespace ConsoleApp1
 
         public void RemoveFromCart(int input, int quantity)
         {
-            _productList.Remove(_productList[input]);
+            _ShoppingCart.Remove(_ShoppingCart[input]);
         }
 
     }
