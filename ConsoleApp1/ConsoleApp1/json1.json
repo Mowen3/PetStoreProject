@@ -1,0 +1,211 @@
+{
+
+  {
+    "Id": 1,
+    "Name": "Husky",
+    "Category": "Animal",
+    "Description": "Male, 2 years old, 50 lbs, friendly and playful",
+    "Price": 500
+  },
+
+  {
+    "Id": 2,
+    "Name":"Maine Coon",
+    "Category": "Animal",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": 3,
+    "Name": "Gold Fish",
+    "Category": "Animal",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": 4,
+    "Name": "Parakeet",
+    "Category": "Animal",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": 5,
+    "Name": "Bearded Dragon",
+    "Category": "Animal",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": 6,
+    "Name": "Nutro",
+    "Category": "Food",
+    "Description":"Dog food 30 lb bag",
+    "Price": 54.99
+  },
+
+  {
+    "Id": 7,
+    "Name":"Hill's Science Diet'",
+    "Category": "Food",
+    "Description":"Perfect Weight Adult Dry Cat Food - Chicken",
+    "Price" : 52.99
+  },
+
+  {
+    "Id": 8,
+    "Name":"Tetra TetraMin",
+    "Category": "Food",
+    "Description": "Tropical Flakes Fish Food",
+    "Price": 42.29
+  },
+
+  {
+    "Id": 9,
+    "Name":"Kaytee FDPH",
+    "Category": "Food",
+    "Description": "FeatherParakeet Bird Food",
+    "Price": 8.99
+  },
+
+  {
+    "Id": 10,
+    "Name":,
+    "Category": "Food",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Food",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Entertainment",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Entertainment",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Entertainment",
+    "Description":,
+    "Price":
+  }
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Entertainment",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Entertainment",
+    "Description":,
+    "Price":
+  }
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Comfort",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Comfort",
+    "Description":,
+    "Price":
+  }
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Comfort",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Comfort",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Comfort",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Medicine",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Medicine",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Medicine",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Medicine",
+    "Description":,
+    "Price":
+  },
+
+  {
+    "Id": null,
+    "Name":,
+    "Category": "Medicine",
+    "Description":,
+    "Price":
+  }
+
+}

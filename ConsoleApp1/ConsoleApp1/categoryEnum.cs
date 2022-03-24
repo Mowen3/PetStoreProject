@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     public enum categoryEnum
     {
-        Animals,
+        Animal,
         Food,
         Entertainment,
         Comfort,
