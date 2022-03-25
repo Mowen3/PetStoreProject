@@ -12,5 +12,41 @@ namespace ConsoleApp1
         public decimal salesTax { get; set; }
         public decimal total { get; set; }
         public decimal price { get; set; }
+        public decimal productTotal { get; set; }
+        private ShoppingCart purchased { get; set; }
+
+        public Receipt(decimal subtotal, decimal salesTax, decimal total, decimal price)
+        {
+            this.subtotal = subtotal;
+            this.salesTax = salesTax;
+            this.total = total;
+            this.price = price;
+        }
+
+        public void PrintToConsole()
+        {
+            foreach (var product in purchased.GetProducts())
+            {
+                int quantity = purchased.GetProducts().Where(x => x.Name == product.Name).Count();
+                Console.WriteLine($"{product.Name} ({quantity}) - ${product.Price}");
+                decimal productTotal = (product.Price * quantity);
+            }
+        }
+
+        
+
+        public void Total()
+        {
+            decimal subTotal = 0.00m;
+
+            foreach (var product in purchased.GetProducts())
+            {
+                subTotal += productTotal;
+                
+            }
+
+            Console.WriteLine($"Subtotal: {subTotal}");
+
+        }
     }
 }
