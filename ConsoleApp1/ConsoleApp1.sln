@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{F081BA31-6A3B-46D6-83B8-8B108F150081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{F081BA31-6A3B-46D6-83B8-8B108F150081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStoreTests", "PetStoreTests\PetStoreTests.csproj", "{EFDFBE8A-E03E-483E-BC7B-6913D816FB39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F081BA31-6A3B-46D6-83B8-8B108F150081}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F081BA31-6A3B-46D6-83B8-8B108F150081}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F081BA31-6A3B-46D6-83B8-8B108F150081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDFBE8A-E03E-483E-BC7B-6913D816FB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDFBE8A-E03E-483E-BC7B-6913D816FB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDFBE8A-E03E-483E-BC7B-6913D816FB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDFBE8A-E03E-483E-BC7B-6913D816FB39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
