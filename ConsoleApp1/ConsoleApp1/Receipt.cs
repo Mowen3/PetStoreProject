@@ -23,7 +23,7 @@ namespace ConsoleApp1
             this.price = price;
         }
 
-        public decimal PrintToConsole()
+        public void PrintToConsole()
         {
             foreach (var product in purchased.GetProducts())
             {
@@ -31,20 +31,21 @@ namespace ConsoleApp1
                 Console.WriteLine($"{product.Name} ({quantity}) - ${product.Price}");
                 decimal productTotal = (product.Price * quantity);
             }
-
-            return productTotal;
         }
 
-        decimal subTotal = 0.00m;
+        
 
         public void Total()
         {
+            decimal subTotal = 0.00m;
+
             foreach (var product in purchased.GetProducts())
             {
                 subTotal += productTotal;
-                Console.WriteLine($"Subtotal: {subTotal}");
-
+                
             }
+
+            Console.WriteLine($"Subtotal: {subTotal}");
 
         }
     }
