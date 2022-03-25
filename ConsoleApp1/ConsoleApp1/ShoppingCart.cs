@@ -16,20 +16,17 @@ namespace ConsoleApp1
         {
             for (var i = 0; i < _ShoppingCart.Count(); i++)
             {
-
                 Console.WriteLine($"[{i + 1}]" + _ShoppingCart[i].ToString());
             }
         }
 
 
         public void AddToCart(Product product, int quantity)
-        {          
-            
+        {                  
             for (var i = 0; i < quantity; i++)
             {
                 _ShoppingCart.Add(product);
-            }
-            
+            }            
         }
 
 
