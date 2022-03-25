@@ -22,12 +22,14 @@ namespace ConsoleApp1
         }
 
 
-        public void AddToCart(int addThis)
-        {
-            //_ShoppingCart.Add(stockList[addThis]);
-            //Console.WriteLine("How many would you like to buy?");
-            //int quantity = int.Parse(Console.ReadLine());
-            //Console.WriteLine($"You have added {quantity} of {stockList[addThis]}");
+        public void AddToCart(Product product, int quantity)
+        {          
+            
+            for (var i = 0; i < quantity; i++)
+            {
+                _ShoppingCart.Add(product);
+            }
+            
         }
 
 
@@ -36,5 +38,15 @@ namespace ConsoleApp1
             _ShoppingCart.Remove(_ShoppingCart[input]);
         }
 
+
+        public int GetNumItems()
+        {
+            return _ShoppingCart.Count;
+        }
+
+        public List<Product> GetProducts()
+        {
+            return _ShoppingCart;
+        }
     }
 }
