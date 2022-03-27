@@ -8,11 +8,15 @@ namespace ConsoleApp1
 {
     public class Payment
     {
+        public PaymentEnum PaymentType { get; set; }
+        public int CardNumber { get; set; }
+        public int Expiration { get; set; }
+        public int CVV { get; set; }
 
-        public decimal PayWithCash(decimal grandTotal)
+        public int PayWithCash(int grandTotal)
         {
             Console.WriteLine("Please enter amount the amount you are paying with in cash:");
-            var tenderedCash = decimal.Parse(Console.ReadLine());
+            var tenderedCash = Convert.ToInt32(Console.ReadLine());
             var change = grandTotal - tenderedCash;
             return change;
         }
@@ -20,14 +24,12 @@ namespace ConsoleApp1
         public void PayWithCard()
         {
             //do we need to parse as integers or do we just need to take the information as a string and display it later?
-
             Console.WriteLine("Please enter your credit card number");
-            var cardNumber = int.Parse(Console.ReadLine());
-            Console.WriteLine("please enter the card expiration date");
-            var expiration = Console.ReadLine();
+            CardNumber = int.Parse(Console.ReadLine());
+            Console.WriteLine("please enter the card expiration date in the format: MMYYYY");
+            Expiration = int.Parse(Console.ReadLine());
             Console.WriteLine("Please enter the CVV code on the back of the card");
-            var cvv = int.Parse(Console.ReadLine());
-
+            CVV = int.Parse(Console.ReadLine());
         }
 
         public int PayWithCheck()
@@ -39,7 +41,7 @@ namespace ConsoleApp1
 
         public void PrintPaymentInfo()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Payement Type:"+PaymentType);
         }
     }
 }

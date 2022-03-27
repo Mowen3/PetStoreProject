@@ -1,4 +1,4 @@
-{
+[
 
   {
     "Id": 1,
@@ -12,7 +12,7 @@
     "Id": 2,
     "Name": "Maine Coon",
     "Category": "Animal",
-    "Description":"Female, 1.5 years old, 30 lbs, cuddly and loving",
+    "Description": "Female, 1.5 years old, 30 lbs, cuddly and loving",
     "Price": 150
   },
 
@@ -20,7 +20,7 @@
     "Id": 3,
     "Name": "Gold Fish",
     "Category": "Animal",
-    "Description":"Looks really similar to Nemo.",
+    "Description": "Looks really similar to Nemo.",
     "Price": 20
   },
 
@@ -28,7 +28,7 @@
     "Id": 4,
     "Name": "Parakeet",
     "Category": "Animal",
-    "Description":"Be cautious what you say around it, because it'll learn it and repeat it'",
+    "Description": "Be cautious what you say around it, because it'll learn it and repeat it'",
     "Price": 95
   },
 
@@ -36,7 +36,7 @@
     "Id": 5,
     "Name": "Bearded Dragon",
     "Category": "Animal",
-    "Description":"Cousin of the Geicko from the Insurance company, you can get it for $15 less",
+    "Description": "Cousin of the Geicko from the Insurance company, you can get it for $15 less",
     "Price": 115
   },
 
@@ -74,17 +74,17 @@
 
   {
     "Id": 10,
-    "Name":"Flucker's Calcium Fortified'",
+    "Name": "Flucker's Calcium Fortified'",
     "Category": "Food",
-    "Description":"Cricket Quencher ",
+    "Description": "Cricket Quencher ",
     "Price": 3.99
   },
 
   {
     "Id": 11,
-    "Name":"KONG Squeezz",
+    "Name": "KONG Squeezz",
     "Category": "Entertainment",
-    "Description":"Ball Dog Toy - Squeaker",
+    "Description": "Ball Dog Toy - Squeaker",
     "Price": 13.99
   },
 
@@ -98,63 +98,63 @@
 
   {
     "Id": 13,
-    "Name":"Top Fin",
+    "Name": "Top Fin",
     "Category": "Entertainment",
-    "Description":"Seashell Aquarium Decor - Assorted Shells",
+    "Description": "Seashell Aquarium Decor - Assorted Shells",
     "Price": 2.99
-  }
+  },
 
   {
     "Id": 14,
-    "Name":"Wesco",
+    "Name": "Wesco",
     "Category": "Entertainment",
-    "Description":"Pet Original Bird Kabob",
+    "Description": "Pet Original Bird Kabob",
     "Price": 8.99
   },
 
   {
     "Id": 15,
-    "Name":"Thrive",
+    "Name": "Thrive",
     "Category": "Entertainment",
-    "Description":"Medium Hanging Terrarium Plant",
+    "Description": "Medium Hanging Terrarium Plant",
     "Price": 6.99
-  } 
+  },
 
   {
     "Id": 16,
-    "Name":"Top Paw",
+    "Name": "Top Paw",
     "Category": "Comfort",
-    "Description":"Orthopedic Lounger Dog Bed",
+    "Description": "Orthopedic Lounger Dog Bed",
     "Price": 99.99
   },
 
   {
     "Id": 17,
-    "Name":"Whisker City",
+    "Name": "Whisker City",
     "Category": "Comfort",
-    "Description":"Bolster Cat Bed",
+    "Description": "Bolster Cat Bed",
     "Price": 16.99
-  }
+  },
 
   {
     "Id": 18,
-    "Name":"Top Fin Essentials",
+    "Name": "Top Fin Essentials",
     "Category": "Comfort",
-    "Description":"Aquarium Starter Kit",
+    "Description": "Aquarium Starter Kit",
     "Price": 149.99
   },
 
   {
     "Id": 19,
-    "Name":"All Living Things",
+    "Name": "All Living Things",
     "Category": "Comfort",
-    "Description":"Hooded Bird Bath",
+    "Description": "Hooded Bird Bath",
     "Price": 12.49
   },
 
   {
     "Id": 20,
-    "Name":"Exo Terra",
+    "Name": "Exo Terra",
     "Category": "Comfort",
     "Description": "Intense Basking Spot Light",
     "Price": 15.99
@@ -162,43 +162,43 @@
 
   {
     "Id": 21,
-    "Name":"Advantage",
+    "Name": "Advantage",
     "Category": "Medicine",
-    "Description":"Flea & Tick Dog and Puppy Shampoo",
+    "Description": "Flea & Tick Dog and Puppy Shampoo",
     "Price": 22.98
   },
 
   {
     "Id": 22,
-    "Name":"Vat's Best'",
+    "Name": "Vat's Best'",
     "Category": "Medicine",
-    "Description":"Flea + Tick Waterless Cat Bath Foam",
+    "Description": "Flea + Tick Waterless Cat Bath Foam",
     "Price": 10.28
   },
 
   {
     "Id": 23,
-    "Name":"API E.M.",
+    "Name": "API E.M.",
     "Category": "Medicine",
-    "Description":"Erythromycin Fish Bacterial Infection Treatment",
+    "Description": "Erythromycin Fish Bacterial Infection Treatment",
     "Price": 16.29
   },
 
   {
     "Id": 24,
-    "Name":"HomeoPet",
+    "Name": "HomeoPet",
     "Category": "Medicine",
-    "Description":"Nose Relief",
+    "Description": "Nose Relief",
     "Price": 10.69
   },
 
   {
     "Id": 25,
-    "Name":"Fluker's'",
+    "Name": "Fluker's'",
     "Category": "Medicine",
-    "Description":"Phosphorous Free Calcium with Vitamin D3 Indoor Reptile Supplement",
+    "Description": "Phosphorous Free Calcium with Vitamin D3 Indoor Reptile Supplement",
     "Price": 4.99
   }
 
-}
+]
 

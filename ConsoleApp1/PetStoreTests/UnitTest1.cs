@@ -10,7 +10,7 @@ namespace PetStoreTests
         {
             //arrange
             ShoppingCart cart = new ShoppingCart();
-            Product product = new Product() { Name = "dog", Category = categoryEnum.Animal, Description = "Huge", Price = 5000 };
+            Product product = new Product() { Name = "dog", Category = CategoryEnum.Animal, Description = "Huge", Price = 5000 };
             //act
             cart.AddToCart(product, 3);
             //assert
@@ -22,7 +22,7 @@ namespace PetStoreTests
         public void CartNameTest()
         {
             ShoppingCart cart = new ShoppingCart();
-            Product product = new Product() { Name = "dog", Category = categoryEnum.Animal, Description = "Huge", Price = 5000 };
+            Product product = new Product() { Name = "dog", Category = CategoryEnum.Animal, Description = "Huge", Price = 5000 };
 
             cart.AddToCart(product, 3);
 
