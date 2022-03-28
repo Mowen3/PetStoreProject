@@ -21,7 +21,7 @@ namespace ConsoleApp1
         {
             for (var i = 0; i < _Inventory.Count(); i++)
             {
-                Console.WriteLine(${_Inventory[i].Id}     {_Inventory[i].Name}, {_Inventory[i].Description}, {_Inventory[i].Price}");
+                Console.WriteLine($"{_Inventory[i].Id} {_Inventory[i].Name} , {_Inventory[i].Description} , ${_Inventory[i].Price}");
             }
             Console.WriteLine();
         }

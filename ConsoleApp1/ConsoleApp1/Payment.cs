@@ -19,7 +19,7 @@ namespace ConsoleApp1
             Console.WriteLine("Please enter the amount in cash you are paying with:");
             var tenderedCash = Convert.ToInt32(Console.ReadLine());
             var change = grandTotal - tenderedCash;
-            return change;
+            return change ;
         }
 
         public void PayWithCard()

@@ -83,9 +83,9 @@ namespace ConsoleApp1
                 Console.WriteLine($"{groupedCart[i].Name}, {groupedCart[i].quantity}, {groupedCart[i].price}");
             }
 
-            Console.WriteLine($"Sub Total: {subtotal}");
-            Console.WriteLine($"Grand Total: {grandTotal}");
-            Console.WriteLine($"Sale Tax: {salesTax}");
+            Console.WriteLine($"Sub Total: ${subtotal}");
+            Console.WriteLine($"Grand Total: ${grandTotal}");
+            Console.WriteLine($"Sale Tax: ${salesTax}");
             payment.PrintPaymentInfo();
         }
 
