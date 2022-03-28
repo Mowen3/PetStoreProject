@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,15 +10,16 @@ namespace ConsoleApp1
     public class ShoppingCart
     {
 
-        private List <Product> _ShoppingCart = new List<Product>();            
+        public List <Product> _ShoppingCart = new List<Product>();
 
-
+        
         public void DisplayCart()
         {
             for (var i = 0; i < _ShoppingCart.Count(); i++)
             {
-                Console.WriteLine($"[{i + 1}]" + _ShoppingCart[i].ToString());
+                Console.WriteLine($"{_ShoppingCart[i].Id} , {_ShoppingCart[i].Name} , {_ShoppingCart[i].Price} , {_ShoppingCart[i].Description}");
             }
+            Console.WriteLine();
         }
 
 
@@ -41,9 +43,9 @@ namespace ConsoleApp1
             return _ShoppingCart.Count;
         }
 
-        public List<Product> GetProducts()
-        {
-            return _ShoppingCart;
-        }
+        //public List<Product> GetProducts()
+        //{
+        //    return _ShoppingCart;
+        //}
     }
 }
