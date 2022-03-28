@@ -48,30 +48,34 @@ namespace ConsoleApp1
 
         //}
 
-        //We need to add a subtotal method
 
+        //This method is to print the subtotal
         public decimal GetSubTotal()
         {
             return cart._ShoppingCart.Sum(x=>x.Price);
         }
 
+        //This method is to print the sales tax
         public decimal GetSalesTaxes()
         {
             return GetSubTotal() * 0.06m;
         }
 
+        //This method is to print the grand total
         public int GetGrandTotal()
         {
             return Convert.ToInt32(Math.Round(GetSubTotal() + GetSalesTaxes()));
         }
 
+
+        //This method is to print all items in the cart, with their quantities and price respectively
         public void DisplayReceipt(Payment payment)
         {
             var groupedCart = cart._ShoppingCart.GroupBy(x => x.Id).Select(x => new
             {
                 Name = x.First().Name,
                 quantity = x.Count(),
-                price = x.First().Price
+                price = x.First().Price,
             }).ToList();
 
             for (var i = 0; i < groupedCart.Count(); i++)

@@ -7,28 +7,23 @@ using System.Threading.Tasks;
 
 Console.WriteLine("Welcome to Pet Island, here's a list of our inventory. What would like to purchase?");
 
-//Convert Json files to List
-
-
-
-//Display inventory
+var inventory = new Inventory();
 
 var cart = new ShoppingCart();
-var inventory = new Inventory();
+
 
 while (true)
 {
     inventory.DisplayInventory();
 
-    //Add item to cart
-    Console.WriteLine("type the id of the item that you want to purchase");
+    Console.WriteLine("Please type the number of the item that you want to purchase:");
+    var item = Convert.ToInt32(Console.ReadLine());
 
-    var productId = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("enter the quantity");
+    Console.WriteLine($"How many of {item} would like to buy?");
     var quantity = Convert.ToInt32(Console.ReadLine());
 
-    var product = inventory.GetInventory().FirstOrDefault(x => x.Id == productId);
-    Console.WriteLine($"Total Price: {product.Price * quantity}");
+    var product = inventory.GetInventory().FirstOrDefault(x => x.Id == item);
+    Console.WriteLine($"Your total Price is: {product.Price * quantity}");
 
     cart.AddToCart(product,quantity);
 
@@ -37,11 +32,12 @@ while (true)
         break;
 }
 
+
 var receipt = new Receipt(cart);
 
 
-Console.WriteLine($"Your Sub Total is:{receipt.subtotal}");
-Console.WriteLine($"Your Tax Sales is:{receipt.salesTax}");
+Console.WriteLine($"Your Subtotal is:{receipt.subtotal}");
+Console.WriteLine($"Your Sales Tax is:{receipt.salesTax}");
 Console.WriteLine($"Your Grand Total is:{receipt.grandTotal}");
 
 var payment = new Payment();

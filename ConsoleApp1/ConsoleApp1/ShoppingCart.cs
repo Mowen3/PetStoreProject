@@ -12,12 +12,12 @@ namespace ConsoleApp1
 
         public List <Product> _ShoppingCart = new List<Product>();
 
-        //}
+        
         public void DisplayCart()
         {
             for (var i = 0; i < _ShoppingCart.Count(); i++)
             {
-                Console.WriteLine($"Id:{_ShoppingCart[i].Id}     {_ShoppingCart[i].Name}, {_ShoppingCart[i].Price}, {_ShoppingCart[i].Description}");
+                Console.WriteLine($"{_ShoppingCart[i].Id} , {_ShoppingCart[i].Name} , {_ShoppingCart[i].Price} , {_ShoppingCart[i].Description}");
             }
             Console.WriteLine();
         }

@@ -14,7 +14,6 @@ namespace ConsoleApp1
         public Inventory()
         {
             var jsonFile = File.ReadAllText("json1.json");
-            //convert json to object
             _Inventory = JsonConvert.DeserializeObject<List<Product>>(jsonFile);
         }
 
@@ -22,7 +21,7 @@ namespace ConsoleApp1
         {
             for (var i = 0; i < _Inventory.Count(); i++)
             {
-                Console.WriteLine($"Id:{_Inventory[i].Id}     {_Inventory[i].Name}, {_Inventory[i].Price}, {_Inventory[i].Description}");
+                Console.WriteLine(${_Inventory[i].Id}     {_Inventory[i].Name}, {_Inventory[i].Description}, {_Inventory[i].Price}");
             }
             Console.WriteLine();
         }
