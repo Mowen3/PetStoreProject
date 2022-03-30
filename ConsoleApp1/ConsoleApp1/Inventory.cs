@@ -14,6 +14,7 @@ namespace ConsoleApp1
         public Inventory()
         {
             var jsonFile = File.ReadAllText("json1.json");
+            //Handle exception here
             _Inventory = JsonConvert.DeserializeObject<List<Product>>(jsonFile);
         }
 
@@ -33,3 +34,5 @@ namespace ConsoleApp1
 
     }
 }
+
+//Library to use: string.format
