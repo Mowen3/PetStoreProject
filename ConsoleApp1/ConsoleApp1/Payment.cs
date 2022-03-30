@@ -19,12 +19,14 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Please enter the amount in cash you are paying with:");
             var tenderedCash = Convert.ToInt32(Console.ReadLine());
-            var change = grandTotal - tenderedCash;
+            var change = tenderedCash - grandTotal;
             return change ;
         }
 
+        //might be broken up
         public void PayWithCard()
         {
+            //number should be string
             Console.WriteLine("Please enter your credit card number:");
             CardNumber = Console.ReadLine();
 
@@ -44,6 +46,7 @@ namespace ConsoleApp1
 
         public void PayWithCheck()
         {
+            //should be a string
             Console.WriteLine("Please enter your check number:");
             CheckNumber = Console.ReadLine();
         }

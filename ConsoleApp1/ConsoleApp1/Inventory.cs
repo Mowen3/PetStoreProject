@@ -33,3 +33,5 @@ namespace ConsoleApp1
 
     }
 }
+
+//Library to use: string.format
