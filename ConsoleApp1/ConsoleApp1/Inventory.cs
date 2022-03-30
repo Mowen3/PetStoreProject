@@ -12,10 +12,9 @@ namespace ConsoleApp1
         private List<Product> _Inventory = new List<Product>();
 
         public Inventory()
-        {
-            var jsonFile = File.ReadAllText("json1.json");
-            //Handle exception here
-            _Inventory = JsonConvert.DeserializeObject<List<Product>>(jsonFile);
+        {            
+                var jsonFile = File.ReadAllText("json1.json");
+                _Inventory = JsonConvert.DeserializeObject<List<Product>>(jsonFile);            
         }
 
         public void DisplayInventory()
