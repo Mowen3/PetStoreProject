@@ -23,30 +23,20 @@ namespace ConsoleApp1
             return change ;
         }
 
-        //might be broken up
+        
         public void PayWithCard()
         {
-            //number should be string
-            Console.WriteLine("Please enter your credit card number:");
-            CardNumber = Console.ReadLine();
 
-            Console.WriteLine("Please enter the card expiration date in the format: MM/YYYY");
-            Expiration = Console.ReadLine();  
-            bool isCardExpired = CheckExpiration(Expiration);
-            while (!isCardExpired)
-            {
-                Console.WriteLine("Card is expired, Please try again");
-                Expiration = Console.ReadLine();
-                isCardExpired = CheckExpiration(Expiration);
-            }
+            InputCardNumber();
+            CheckExpiration();          
+            CheckCvv();
 
-            Console.WriteLine("Please enter the CVV code on the back of your card");
-            CVV = Console.ReadLine();
+            
         }
 
         public void PayWithCheck()
         {
-            //should be a string
+            
             Console.WriteLine("Please enter your check number:");
             CheckNumber = Console.ReadLine();
         }
@@ -70,19 +60,110 @@ namespace ConsoleApp1
             }
         }
 
-        private bool CheckExpiration(string date)
+        private void CheckExpiration()
         {
-            DateTime newExpiration = DateTime.ParseExact(date, "mm/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+            
+            bool isNotExpired = false;
+            while (!isNotExpired)
+            {
+                Console.WriteLine("Please enter an expiration date in: mm/yyyy");
+                Expiration = Console.ReadLine();
+                DateTime newExpiration;
+                if (string.IsNullOrEmpty(Expiration))
+                {
+                    Console.WriteLine("Please put in a expiration date");
+                    continue;
+                }
+                else if(Expiration.Length != 7)
+                {
+                    Console.WriteLine("The expiration date should be in format mm/yyyy");
+                    continue;
+                }
+                else
+                    {
+                       newExpiration = DateTime.ParseExact(Expiration, "mm/yyyy", System.Globalization.CultureInfo.InvariantCulture);
 
-            if (newExpiration < DateTime.Today)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
+                        if(newExpiration < DateTime.Today)
+                        {
+                            Console.WriteLine("This card is expired. Please try again");
+                            continue;
+                        }
+                        else
+                        {
+                        Console.WriteLine("Your expiration date has been accepted");
+                            isNotExpired = true;
+                        }
+                    }
+                 
+                }
             }
                 
+        
+
+        private void InputCardNumber()
+        {
+            bool isValid = false;
+            while(!isValid)
+            {
+                Console.WriteLine("Please enter your credit card number:");
+                CardNumber = Console.ReadLine();
+                if (string.IsNullOrEmpty(CardNumber))
+                {
+                    Console.WriteLine("Please put in a valid card number");
+                    continue;
+                }
+                else if(CardNumber.Length != 16)
+                {
+                    Console.WriteLine("A credit card should be 16 digits long. Please try again");
+                    continue;
+                }
+                else if (!CardNumber.All(char.IsDigit))
+                {
+                    Console.WriteLine("Card numbers should only be numbers");
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("Your card number has been accepted");
+                    isValid = true;
+                }
+            }
+       
         }
+
+        private void CheckCvv()
+        {
+            bool isValid = false;
+            while (!isValid)
+            {
+
+
+                Console.WriteLine("Please enter the CVV code on the back of your card");
+                CVV = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(CVV))
+                {
+                    Console.WriteLine("please enter a valid CVV");
+                    continue;
+                }
+                else if (CVV.Length != 3)
+                {
+                    Console.WriteLine("CVV numbers should be 3 digits");
+                    continue;
+                }
+                else if (!CVV.All(char.IsDigit))
+                {
+                    Console.WriteLine("CVV numbers should only be digits");
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("CVV has been accepted");
+                    isValid = true;
+                }
+            }
+        }
+
     }
+
 }
