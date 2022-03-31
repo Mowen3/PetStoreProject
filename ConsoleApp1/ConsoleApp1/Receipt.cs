@@ -23,32 +23,6 @@ namespace ConsoleApp1
             grandTotal = GetGrandTotal();
         }
 
-        //public void PrintToConsole()
-        //{
-        //    foreach (var product in purchased.GetProducts())
-        //    {
-        //        int quantity = purchased.GetProducts().Where(x => x.Name == product.Name).Count();
-        //        Console.WriteLine($"{product.Name} ({quantity}) - ${product.Price}");
-        //        decimal productTotal = (product.Price * quantity);
-        //    }
-        //}
-
-        
-        ////This class calculates the price for all products
-        //public void Total()
-        //{
-        //    decimal subTotal = 0.00m;
-
-        //    foreach (var product in purchased.GetProducts())
-        //    {
-        //        subTotal += productTotal;
-                
-        //    }
-
-        //    Console.WriteLine($"Subtotal: {subTotal}");
-
-        //}
-
 
         //This method is to print the subtotal
         public decimal GetSubTotal()

@@ -25,7 +25,7 @@ namespace ConsoleApp1
         {
 
 
-            
+            Console.OutputEncoding = Encoding.UTF8;
             var table = new Spectre.Console.Table();
             table.Border = TableBorder.DoubleEdge;
 
