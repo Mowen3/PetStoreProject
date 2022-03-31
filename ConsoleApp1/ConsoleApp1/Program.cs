@@ -20,7 +20,19 @@ while (true)
     inventory.DisplayInventory();
 
     Console.WriteLine("Please type the number of the item that you want to purchase:");
+
     var item = Convert.ToInt32(Console.ReadLine());
+
+    try
+    {
+        if (item > 26);
+
+    }
+    catch
+    {
+        Console.WriteLine("Please make sure to pick a number between 1 and 25");
+    }
+
 
     Console.WriteLine($"How many of that item would like to buy?");
     var quantity = Convert.ToInt32(Console.ReadLine());
@@ -49,7 +61,7 @@ payment.PaymentType = (PaymentEnum)Convert.ToInt32(Console.ReadLine());
 
 
 if (payment.PaymentType == PaymentEnum.Cash)
-    Console.WriteLine(payment.PayWithCash(receipt.GetGrandTotal()));
+    Console.WriteLine($"Your change is ${payment.PayWithCash(receipt.GetGrandTotal())}");
 
 else if (payment.PaymentType == PaymentEnum.Credit)
     payment.PayWithCard();

@@ -14,9 +14,11 @@ namespace ConsoleApp1
         private List<Product> _Inventory = new List<Product>();
 
         public Inventory()
+
         {
             var jsonFile = File.ReadAllText("json1.json");
            _Inventory = JsonConvert.DeserializeObject<List<Product>>(jsonFile);
+
         }
 
         public void DisplayInventory()
@@ -54,3 +56,5 @@ namespace ConsoleApp1
 
     }
 }
+
+//Library to use: string.format

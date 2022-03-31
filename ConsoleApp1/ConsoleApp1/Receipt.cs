@@ -14,6 +14,7 @@ namespace ConsoleApp1
         public Payment payment{ get; set; }
         private ShoppingCart cart { get; set; }
 
+        //Handle exception here
         public Receipt(ShoppingCart cart)
         {
             this.cart = cart;
@@ -80,7 +81,8 @@ namespace ConsoleApp1
 
             for (var i = 0; i < groupedCart.Count(); i++)
             {
-                Console.WriteLine($"{groupedCart[i].Name}, {groupedCart[i].quantity}, {groupedCart[i].price}");
+                //fix here to show price*quant
+                Console.WriteLine($"{groupedCart[i].Name}, {groupedCart[i].quantity} , ${groupedCart[i].quantity * groupedCart[i].price}");
             }
 
             Console.WriteLine($"Sub Total: ${subtotal}");
