@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1;
+using Spectre.Console;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ Console.WriteLine("Welcome to Pet Island, here's a list of our inventory. What w
 var inventory = new Inventory();
 
 var cart = new ShoppingCart();
+
 
 
 while (true)
@@ -59,3 +61,8 @@ receipt.DisplayReceipt(payment);
 
 Console.WriteLine();
 Console.WriteLine("Thank you and have a great day");
+
+
+
+
+

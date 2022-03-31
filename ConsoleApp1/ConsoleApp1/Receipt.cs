@@ -84,8 +84,8 @@ namespace ConsoleApp1
             }
 
             Console.WriteLine($"Sub Total: ${subtotal}");
-            Console.WriteLine($"Grand Total: ${grandTotal}");
             Console.WriteLine($"Sale Tax: ${salesTax}");
+            Console.WriteLine($"Grand Total: ${grandTotal}");
             payment.PrintPaymentInfo();
         }
 
